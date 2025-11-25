@@ -2,7 +2,8 @@
 .claude/
 
 # Virtual environments
-
+venv/
+.venv/
 ENV/
 outputs/
 
