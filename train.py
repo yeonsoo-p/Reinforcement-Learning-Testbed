@@ -29,8 +29,8 @@ class AttentionLookaheadExtractor(BaseFeaturesExtractor):
     Custom feature extractor that uses self-attention over lookahead points.
 
     Architecture:
-        base_obs (num_base_obs) ─────────────────────────────────┐
-                                                                 ├── Combined → features_dim
+        base_obs (num_base_obs) ────────────────────────────────────┐
+                                                                    ├── Combined → features_dim
         lookahead (num_lookahead_points×3) → Self-Attention → pool ─┘
 
     The attention mechanism learns which lookahead points are most relevant
@@ -278,7 +278,7 @@ def train(args):
         model = PPO.load(
             str(model_file),
             env=env,
-            device="cpu",
+            device="cuda",
             # Override hyperparameters if needed
             learning_rate=args.learning_rate,
             tensorboard_log=str(output_dir / "tensorboard"),
@@ -354,7 +354,7 @@ def train(args):
             policy_kwargs=policy_kwargs,
             tensorboard_log=str(output_dir / "tensorboard"),
             verbose=1,
-            device="cpu",
+            device="cuda",
         )
 
     print(f"Model device: {model.device}")

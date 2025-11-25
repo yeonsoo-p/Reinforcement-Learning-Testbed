@@ -55,7 +55,7 @@ def evaluate(args):
         print("Warning: No normalization stats found, using raw observations")
 
     # Load model
-    model = PPO.load(str(model_file), env=vec_env, device="auto")
+    model = PPO.load(str(model_file), env=vec_env, device="cuda")
     print(f"Model loaded successfully (device: {model.device})")
 
     # Run evaluation episodes

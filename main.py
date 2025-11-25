@@ -58,7 +58,7 @@ def main():
         choices=["sine", "arc", "scurve", "spiral", "hairpin", "random"],
     )
     train_parser.add_argument("--total-timesteps", type=int, default=500_000)
-    train_parser.add_argument("--n-envs", type=int, default=32)
+    train_parser.add_argument("--n-envs", type=int, default=64)
     train_parser.add_argument("--learning-rate", type=float, default=3e-4)
     train_parser.add_argument("--n-steps", type=int, default=2048)
     train_parser.add_argument("--batch-size", type=int, default=64)
