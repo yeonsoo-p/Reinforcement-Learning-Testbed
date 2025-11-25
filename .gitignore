@@ -1,0 +1,33 @@
+# Claude Code
+.claude/
+
+# Virtual environments
+
+ENV/
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Training outputs
+outputs/
+checkpoints/
+logs/
+tensorboard/
+
+# Model files
+*.zip
+*.pkl
+
+# OS
+.DS_Store
+Thumbs.db
