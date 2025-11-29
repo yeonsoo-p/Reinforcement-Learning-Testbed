@@ -147,7 +147,7 @@ class TrainingConfig:
     max_grad_norm: float = 0.5
 
     # Environment settings
-    n_envs: int = 64
+    n_envs: int = 16
 
     # Checkpointing
     save_freq: int = 10_000

@@ -4,7 +4,7 @@ torch>=2.1.0
 
 # Deep RL and Environment
 gymnasium>=0.29.0
-stable-baselines3>=2.2.0
+stable-baselines3[extra]>=2.2.0
 
 # Core scientific computing
 numpy>=1.24.0
@@ -16,3 +16,4 @@ matplotlib>=3.7.0
 
 # Progress and utilities
 tqdm>=4.65.0
+tensorboard>=2.12.0
